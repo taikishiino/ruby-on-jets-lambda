@@ -1,7 +1,7 @@
 on:
   push:
-    branches:
-      - master
+#     branches:
+#       - master
 
 name: Auto Deploy to AWS Lambda
 
@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
+          node-version: '10.x'
 
       - name: Install Dependencies
         run: |
